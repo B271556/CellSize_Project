@@ -39,3 +39,12 @@ All scripts are organised to use relative paths and deposit outputs in `results/
 
 ---
 
+## Installation
+
+To reproduce or explore this analysis locally:
+
+```bash
+# Clone this repository
+git clone https://github.com/<your-username>/cellsize-bioinformatics-project.git
+cd cellsize-bioinformatics-project
+
