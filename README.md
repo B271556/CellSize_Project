@@ -1,5 +1,13 @@
 # Cell-Size-Dependent Transcriptomic Regulation in *Saccharomyces cerevisiae*
 
+# Cell-Size-Dependent Transcriptomic Regulation in *Saccharomyces cerevisiae*
+
+| Field | Details |
+|-------|----------|
+| **Author** | Hans B. Liu |
+| **Languages** | R 4.3.2  (RStudio 2025.05) |
+| **Core packages** | tidyverse, mitch, ggplot2, pheatmap, VennDiagram |
+
 **Author:** Hans B. Liu  
 **Languages:** R (4.3.2) (RStudio 2025.05)  
 **Core packages:** tidyverse, mitch, ggplot2, pheatmap, VennDiagram  
