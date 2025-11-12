@@ -48,3 +48,30 @@ To reproduce or explore this analysis locally:
 git clone https://github.com/<your-username>/cellsize-bioinformatics-project.git
 cd cellsize-bioinformatics-project
 
+## Installation
+
+To reproduce or explore this analysis locally, follow these four steps:
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/<your-username>/cellsize-bioinformatics-project.git
+cd cellsize-bioinformatics-project
+2️⃣ Install R and RStudio
+Ensure that R 4.3.2 (or later) and RStudio 2025.05 are installed on your system.
+
+3️⃣ Install required packages
+Open R or RStudio and run:
+
+r
+Copy code
+install.packages(c("tidyverse", "ggplot2", "pheatmap", "VennDiagram"))
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install("mitch")
+4️⃣ (Optional) Restore the reproducible environment
+To match the exact package versions used in this analysis, use renv:
+
+r
+Copy code
+install.packages("renv")
+renv::restore()
