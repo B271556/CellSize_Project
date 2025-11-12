@@ -15,7 +15,7 @@ The analysis integrates transcriptomic slopes derived from four RNA-seq datasets
 
 ## Data Sources
 The data analysed in this project are dreived from the following published studies:
-1. **Swaffer, M.P. et al. (2023)** — RNA polymerase II dynamics and mRNA stability feedback scale mRNA amounts with cell size.  
+1. **Swaffer, M.P. et al. (2023).**. RNA polymerase II dynamics and mRNA stability feedback scale mRNA amounts with cell size.  
   *Cell* **186**(24): 5254–5268.e26. (PMID: 37944513)  
 2. **Lanz, M.C. et al. (2024)** — Genome dilution by cell growth drives starvation-like proteome remodeling in mammalian and yeast cells.  
   *Nature Structural & Molecular Biology* **31**(12): 1859–1871. (PMID: 39048803)  
