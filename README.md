@@ -15,13 +15,13 @@ The analysis integrates transcriptomic slopes derived from four RNA-seq datasets
 
 ## Data Sources
 The data analysed in this project are dreived from the following published studies:
-1. **Swaffer, M.P. et al. (2023).**. RNA polymerase II dynamics and mRNA stability feedback scale mRNA amounts with cell size.  
+1. **Swaffer, M.P. et al. (2023).** RNA polymerase II dynamics and mRNA stability feedback scale mRNA amounts with cell size.  
   *Cell* **186**(24): 5254–5268.e26. (PMID: 37944513)  
-2. **Lanz, M.C. et al. (2024)** — Genome dilution by cell growth drives starvation-like proteome remodeling in mammalian and yeast cells.  
+2. **Lanz, M.C. et al. (2024).** Genome dilution by cell growth drives starvation-like proteome remodeling in mammalian and yeast cells.  
   *Nature Structural & Molecular Biology* **31**(12): 1859–1871. (PMID: 39048803)  
-3. **Mahendrawada, L. et al. (2025)** — Low overlap of transcription factor DNA binding and regulatory targets.  
+3. **Mahendrawada, L. et al. (2025).** Low overlap of transcription factor DNA binding and regulatory targets.  
   *Nature* **642**(8068): 796–804. (PMID: 40240607)  
-4. **Huber, A. et al. (2011)** — Sch9 regulates ribosome biogenesis via Stb3, Dot6 and Tod6 and the histone deacetylase complex RPD3L.  
+4. **Huber, A. et al. (2011).** Sch9 regulates ribosome biogenesis via Stb3, Dot6 and Tod6 and the histone deacetylase complex RPD3L.  
   *EMBO Journal* **30**(15): 3052–3064. (PMID: 21730963)
 
 > The data contain only _S. cerevisiae_ data; the data contain no human or otherwise sensitive information.
