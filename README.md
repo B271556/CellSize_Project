@@ -1,7 +1,7 @@
 # Cell-Size-Dependent Transcriptomic Regulation in *Saccharomyces cerevisiae*
 
 **Author:** Hans B. Liu  
-**Supervision:** Matthew Swaffer Lab, University of Edinburgh, School of Biological Sciences  
+**Supervision:** Matthew Swaffer, Center for Cell Biology, University of Edinburgh 
 **Languages:** R (≥ 4.3) 
 **Core packages:** tidyverse, DESeq2, mitch, ggplot2, pheatmap, VennDiagram  
 
@@ -23,8 +23,6 @@ The data analysed in this project are dreived from the following published studi
   *Nature* **642**(8068): 796–804. (PMID: 40240607)  
 4. **Huber, A. et al. (2011).** Sch9 regulates ribosome biogenesis via Stb3, Dot6 and Tod6 and the histone deacetylase complex RPD3L.  
   *EMBO Journal* **30**(15): 3052–3064. (PMID: 21730963)
-
-> The data contain only _S. cerevisiae_ data; the data contain no human or otherwise sensitive information.
 
 ---
 
