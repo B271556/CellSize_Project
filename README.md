@@ -39,39 +39,25 @@ All scripts are organised to use relative paths and deposit outputs in `results/
 
 ---
 
-## Installation
+## Reproducibility
 
-To reproduce or explore this analysis locally:
+To reproduce any portion, or the entirety of, the results generated from this project, follow the steps below. The project is designed so that **every script can be run independently**. All intermediate tables and outputs required by downstream scripts have already been generated and are included in the repository.
 
-```bash
-# Clone this repository
-git clone https://github.com/<your-username>/cellsize-bioinformatics-project.git
-cd cellsize-bioinformatics-project
+### 1. Install RStudio
+Install RStudio (version ≥ 2023.12 recommended) and ensure that a compatible version of R is installed on your system.
 
-## Installation
+### 2. Copy the entire folder titled 'data' to your local computer 
 
-To reproduce or explore this analysis locally, follow these four steps:
+### 3. Restore the R package environment used in this project
+Open the project file cellsize_project.Rproj in RStudio and then run the following command:
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/<your-username>/cellsize-bioinformatics-project.git
-cd cellsize-bioinformatics-project
-2️⃣ Install R and RStudio
-Ensure that R 4.3.2 (or later) and RStudio 2025.05 are installed on your system.
-
-3️⃣ Install required packages
-Open R or RStudio and run:
-
-r
-Copy code
-install.packages(c("tidyverse", "ggplot2", "pheatmap", "VennDiagram"))
-if (!requireNamespace("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
-BiocManager::install("mitch")
-4️⃣ (Optional) Restore the reproducible environment
-To match the exact package versions used in this analysis, use renv:
-
-r
-Copy code
-install.packages("renv")
+```r
+install.packages("renv")   # only needed if renv is not already installed
 renv::restore()
+```
+
+### 3. Open any .Rmd file in RStudio and run it 
+
+
+
+
