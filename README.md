@@ -46,7 +46,7 @@ Download Git from https://git-scm.com/downloads (Windows/macOS/Linux). Install G
 ```r
 git clone https://github.com/B271556/CellSize_Project.git
 cd CellSize_Project
-git lfs pull         # downloads the full contents of large files (e.g., .Rmd scripts, PDFs, tables)
+git lfs pull         # downloads the full contents of large files (e.g., .Rmd files, .pdf files, tables)
 ```
 
 ### 3. Restore the R package environment used in this project
