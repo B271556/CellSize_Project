@@ -1,9 +1,10 @@
 # Cell-Size-Dependent Transcriptomic Regulation in *Saccharomyces cerevisiae*
- 
+
+**Author: Hans B. Liu** 
 ---
 
 ## Project Overview
-This repository contains a curated subset of the code used in my MSc Bioinformatics dissertation titled *Examination of transcription factor-regulated gene expression changes with cell size in yeast.*  There are approximately 150 known transcription factors (TFs) in the budding yeast *Saccharomyces cerevisiae*. Each TF binds to and/or regulates various genes. This project integrates mRNA expression derived from four RNA-seq datasets with TF binding and regulation information to uncover how the expression of genes associated with TFs scales with cell size. The analysis was done twice (before and after removing growth rate effects) in order to distinguish between expression changes associated with cell size from those associated with cellular growth rate. 
+This repository contains the material used in my MSc Bioinformatics dissertation titled *Examination of transcription factor-regulated gene expression changes with cell size in yeast.*  There are approximately 150 known transcription factors (TFs) in the budding yeast *Saccharomyces cerevisiae*. Each TF binds to and/or regulates various genes. This project integrates mRNA expression derived from four RNA-seq datasets with TF binding and regulation information to uncover how the expression of genes associated with TFs scales with cell size. The analysis was done twice (before and after removing growth rate effects) in order to distinguish between expression changes associated with cell size from those associated with cellular growth rate. 
 
 ---
 
@@ -25,9 +26,8 @@ Main computational steps implemented as RMarkdown workflows:
 
 1. **mRNA slope import & combination**: integrates slopes from four RNA-seq datasets with TF-associated information.  
 2. **growth rate signature removal**: uses linear regression and growth rate annotations to obtain slope residuals.  
-3. **Wilcoxon tests (VP script)**: compares slope (or residual) distributions between TF-associated genes and the remaining genes, producing cumulative frequency distribution plots and volcano plots.  
-4. **2D annotation enrichment analysis (EA script)**: uses `mitch` to calculate S-scores and adjusted p-values, producing enrichment scatter plots and heatmaps.  
-5. **integration & visualisation**: generates Venn diagrams and summary tables highlighting TF gene groups which exhibit a biased scaling behaviour.
+3. **Wilcoxon tests (VP script)**: compares slope (or residual) distributions between TF-associated genes and the remaining genes, producing cumulative frequency distribution plots, volcano plots, Venn diagrams, and tables to summarise the results.  
+4. **2D annotation enrichment analysis (EA script)**: uses `mitch` to calculate S-scores and adjusted p-values, producing enrichment scatter plots, heatmaps, Venn diagrams, and tables to summarise the results. 
 
 All scripts are organised to use relative paths and deposit outputs in `results/figures` and `results/tables`.
 
