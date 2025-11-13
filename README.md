@@ -50,7 +50,7 @@ git lfs pull         # downloads the full contents of large files (e.g., .Rmd fi
 ```
 
 ### 3. Restore the R package environment used in this project
-Double-click the project file cellsize_project.Rproj to open in RStudio (this sets the working directory automatically) and then run the following command in the console:
+Double-click the project file _cellsize_project.Rproj_ to open in RStudio (this sets the working directory automatically) and then run the following command in the console:
 
 ```r
 install.packages("renv")    # only needed if renv is not already installed
