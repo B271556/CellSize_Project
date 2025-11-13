@@ -1,6 +1,6 @@
 # Cell-Size-Dependent Transcriptomic Regulation in *Saccharomyces cerevisiae*
 
-**Author: Hans B. Liu** 
+Author: Hans B. Liu
 ---
 
 ## Project Overview
