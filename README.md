@@ -41,7 +41,7 @@ Each script starts by setting the working directory as the folder in which the s
 Install R (version ≥ 4.3) from https://cran.r-project.org and RStudio (version ≥ 2023.12) from https://posit.co/download/rstudio-desktop/.
 
 ### 2. Clone this repository by using Git  
-Download Git from https://git-scm.com/downloads (Windows/macOS/Linux). Install Git LFS (via winget install GitHub.GitLFS on Windows, brew install git-lfs on macOS, or from https://git-lfs.com).In a terminal (if using Mac) or command prompt (if using Windows), run the following command:
+Download Git from https://git-scm.com/downloads (Windows/macOS/Linux). Install Git LFS (via winget install GitHub.GitLFS on Windows, brew install git-lfs on macOS, or from https://git-lfs.com). In terminal (if using Mac) or command prompt (if using Windows), run the following command:
 
 ```r
 git clone https://github.com/B271556/CellSize_Project.git
