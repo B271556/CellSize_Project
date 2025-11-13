@@ -35,12 +35,9 @@ All scripts are organised to use relative paths and deposit outputs in `results/
 
 ## Reproducibility
 
-  • Each script starts by setting the working directory as the folder in which the script resides, so the scripts can be run without
-    manually setting working directories.  
-  • Certain scripts use the output generated from one script as input. However, to reproduce the results of this project, the scripts do     not have to be run in any order, and each script can be run on its own. The reason is that all the scripts have been run previously      and all scripts use relative paths that are already set up in the 'data' folder. This means that all required input files are            already present. 
-  • To ensure reproducibility, use Git clone below instead of downloading the ZIP as ZIP download only gets placeholders for large files     such as .Rmd files).
+Each script starts by setting the working directory as the folder in which the script resides, so the scripts can be run without manually setting working directories. Certain scripts use the output generated from one script as input. However, to reproduce the results of this project, the scripts do not have to be run in any order, and each script can be run on its own. The reason is that all the scripts have been run previously and all scripts use relative paths that are already set up in the 'data' folder. This means that all required input files are already present. To ensure reproducibility, use Git clone below instead of downloading the ZIP as ZIP download only gets placeholders for large files such as .Rmd files.
 
-  • To reproduce any portion, or the entirety of, the results generated from this project, follow the steps below. 
+To reproduce any portion, or the entirety of, the results generated from this project, follow the steps below. 
 
 ### 1. Install R and RStudio
   • Install R (version ≥ 4.3) from https://cran.r-project.org. 
@@ -58,7 +55,7 @@ git lfs pull         # downloads the full contents of large files (e.g., .Rmd fi
 ```
 
 ### 3. Restore the R package environment used in this project
-  • Double-click the project file _cellsize_project.Rproj_ to open it in RStudio (this sets the working directory automatically)
+  • Double-click the project file _cellsize_project.Rproj_ to open it in RStudio (this sets the working directory automatically)  
   • Run the following command in the console:
 
 ```r
