@@ -37,7 +37,7 @@ All scripts are organised to use relative paths and deposit outputs in `results/
 
 Each script starts by setting the working directory as the folder in which the script resides, so the scripts can be run without manually setting working directories. Certain scripts use the output generated from one script as input. However, to reproduce the results of this project, the scripts do not have to be run in any order, and each script can be run on its own. The reason is that all the scripts have been run previously and all scripts use relative paths that are already set up in the 'data' folder. This means that all required input files are already present. To reproduce any portion, or the entirety of, the results generated from this project, simply follow the steps below. 
 
-### 1. Install RStudio
+### 1. Install R and RStudio
 Install R (version ≥ 4.3 recommended) from https://cran.r-project.org and RStudio (≥ 2023.12) from https://posit.co/download/rstudio-desktop/. On Windows, also install RTools (matching your R version) from https://cran.r-project.org/bin/windows/Rtools/ for compiling packages like Rcpp/lme4 during renv restore.
 
 ### 2. Clone this repository by using Git  
