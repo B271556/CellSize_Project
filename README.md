@@ -38,17 +38,26 @@ All scripts are organised to use relative paths and deposit outputs in `results/
 Each script starts by setting the working directory as the folder in which the script resides, so the scripts can be run without manually setting working directories. Certain scripts use the output generated from one script as input. However, to reproduce the results of this project, the scripts do not have to be run in any order, and each script can be run on its own. The reason is that all the scripts have been run previously and all scripts use relative paths that are already set up in the 'data' folder. This means that all required input files are already present. To reproduce any portion, or the entirety of, the results generated from this project, simply follow the steps below. 
 
 ### 1. Install RStudio
-Install RStudio (version ≥ 2023.12 recommended) and ensure that a compatible version of R is installed on your system.
+Install R (version ≥ 4.3 recommended) from https://cran.r-project.org and RStudio (≥ 2023.12) from https://posit.co/download/rstudio-desktop/. On Windows, also install RTools (matching your R version) from https://cran.r-project.org/bin/windows/Rtools/ for compiling packages like Rcpp/lme4 during renv restore.
 
-### 2. Copy the entire folder titled 'data' to your local computer 
-
-### 3. Restore the R package environment used in this project
-Open the project file cellsize_project.Rproj in RStudio and then run the following command:
+### 2. Clone this repository by using Git  
+Download Git from https://git-scm.com/downloads (Windows/macOS/Linux). Install Git LFS (via winget install GitHub.GitLFS on Windows, brew install git-lfs on macOS, or from https://git-lfs.com).In a terminal (if using Mac) or command prompt (if using Windows), run the following command:
 
 ```r
-install.packages("renv")   # only needed if renv is not already installed
-renv::restore()
+git clone https://github.com/B271556/CellSize_Project.git
+cd CellSize_Project
+git lfs pull         # downloads the full contents of large files (e.g., .Rmd scripts, PDFs, tables)
 ```
+
+### 3. Restore the R package environment used in this project
+Double-click the project file cellsize_project.Rproj to open in RStudio (this sets the working directory automatically) and then run the following command in the console:
+
+```r
+install.packages("renv")    # only needed if renv is not already installed
+renv::restore()             # installs the exact package versions that were used in the project
+```
+
+If prompted during restore/activation, choose option 1 (activate project library). On Windows, if compilation fails, ensure RTools is in your PATH and retry.
 
 ### 4. Open any .Rmd file in RStudio and run it 
 
