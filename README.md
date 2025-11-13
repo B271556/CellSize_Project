@@ -35,7 +35,7 @@ All scripts are organised to use relative paths and deposit outputs in `results/
 
 ## Reproducibility
 
-Each script starts by setting the working directory as the folder in which the script resides, so the scripts can be run without manually setting working directories. Certain scripts use the output generated from one script as input. However, to reproduce the results of this project, the scripts do not have to be run in any order, and each script can be run on its own. The reason is that all the scripts have been ran previously and all scripts use relative paths that are alraedy set up in the 'data' folder. This means that all required input files are already present. To reproduce any portion, or the entirety of, the results generated from this project, simply follow the steps below. 
+Each script starts by setting the working directory as the folder in which the script resides, so the scripts can be run without manually setting working directories. Certain scripts use the output generated from one script as input. However, to reproduce the results of this project, the scripts do not have to be run in any order, and each script can be run on its own. The reason is that all the scripts have been run previously and all scripts use relative paths that are already set up in the 'data' folder. This means that all required input files are already present. To reproduce any portion, or the entirety of, the results generated from this project, simply follow the steps below. 
 
 ### 1. Install RStudio
 Install RStudio (version ≥ 2023.12 recommended) and ensure that a compatible version of R is installed on your system.
@@ -50,7 +50,7 @@ install.packages("renv")   # only needed if renv is not already installed
 renv::restore()
 ```
 
-### 3. Open any .Rmd file in RStudio and run it 
+### 4. Open any .Rmd file in RStudio and run it 
 
 
 
