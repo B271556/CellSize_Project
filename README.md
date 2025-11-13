@@ -35,13 +35,15 @@ All scripts are organised to use relative paths and deposit outputs in `results/
 
 ## Reproducibility
 
-Each script starts by setting the working directory as the folder in which the script resides, so the scripts can be run without manually setting working directories. Certain scripts use the output generated from one script as input. However, to reproduce the results of this project, the scripts do not have to be run in any order, and each script can be run on its own. The reason is that all the scripts have been run previously and all scripts use relative paths that are already set up in the 'data' folder. This means that all required input files are already present. To reproduce any portion, or the entirety of, the results generated from this project, simply follow the steps below. 
+Each script starts by setting the working directory as the folder in which the script resides, so the scripts can be run without manually setting working directories. Certain scripts use the output generated from one script as input. However, to reproduce the results of this project, the scripts do not have to be run in any order, and each script can be run on its own. The reason is that all the scripts have been run previously and all scripts use relative paths that are already set up in the 'data' folder. This means that all required input files are already present. To ensure reproducibility, use Git clone below (instead of downloading the ZIP as ZIP download only gets placeholders for large files such as .Rmd files).
+
+To reproduce any portion, or the entirety of, the results generated from this project, follow the steps below. 
 
 ### 1. Install R and RStudio
 Install R (version ≥ 4.3) from https://cran.r-project.org and RStudio (version ≥ 2023.12) from https://posit.co/download/rstudio-desktop/.
 
 ### 2. Clone this repository by using Git  
-Download Git from https://git-scm.com/downloads (Windows/macOS/Linux). Install Git LFS (via winget install GitHub.GitLFS on Windows, brew install git-lfs on macOS, or from https://git-lfs.com). In terminal (if using Mac) or command prompt (if using Windows), run the following command:
+Download Git from https://git-scm.com/downloads (Windows/macOS/Linux). Install Git LFS (via winget install GitHub.GitLFS on Windows, brew install git-lfs on macOS, or from https://git-lfs.com). In Terminal (if using Mac) or Command Prompt (if using Windows), run the following command:
 
 ```r
 git clone https://github.com/B271556/CellSize_Project.git
@@ -50,14 +52,14 @@ git lfs pull         # downloads the full contents of large files (e.g., .Rmd fi
 ```
 
 ### 3. Restore the R package environment used in this project
-Double-click the project file _cellsize_project.Rproj_ to open in RStudio (this sets the working directory automatically) and then run the following command in the console:
+Double-click the project file _cellsize_project.Rproj_ to open it in RStudio (this sets the working directory automatically) and then run the following command in the console:
 
 ```r
 install.packages("renv")    # only needed if renv is not already installed
 renv::restore()             # installs the exact package versions that were used in the project
 ```
 
-If prompted during restore/activation, choose option 1 (activate project library). On Windows, if compilation fails, ensure RTools is in your PATH and retry.
+If prompted during restore/activation, choose option 1 (activate project library).  
 
 ### 4. Open any .Rmd file in RStudio and run it 
 
