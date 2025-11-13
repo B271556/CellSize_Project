@@ -40,7 +40,8 @@ Each script starts by setting the working directory as the folder in which the s
 To reproduce any portion, or the entirety of, the results generated from this project, follow the steps below. 
 
 ### 1. Install R and RStudio
-Install R (version ≥ 4.3) from https://cran.r-project.org and RStudio (version ≥ 2023.12) from https://posit.co/download/rstudio-desktop/.
+  • Install R (version ≥ 4.3) from https://cran.r-project.org 
+  • and RStudio (version ≥ 2023.12) from https://posit.co/download/rstudio-desktop/.
 
 ### 2. Clone this repository by using Git  
 Download Git from https://git-scm.com/downloads (Windows/macOS/Linux). Install Git LFS (via winget install GitHub.GitLFS on Windows, brew install git-lfs on macOS, or from https://git-lfs.com). In Terminal (if using Mac) or Command Prompt (if using Windows), run the following command:
