@@ -1,11 +1,5 @@
 # Cell-Size-Dependent Transcriptomic Regulation in *Saccharomyces cerevisiae*
  
-<pre style="background:none; border:0; padding:0; margin:0; font-family:ui-monospace, monospace;">
-       Author: Hans B. Liu
-    Languages: R 4.3.2 (RStudio 2025.05)
-Core packages: tidyverse, mitch, ggplot2, pheatmap, VennDiagram
-</pre>
-
 ---
 
 ## Project Overview
@@ -41,7 +35,7 @@ All scripts are organised to use relative paths and deposit outputs in `results/
 
 ## Reproducibility
 
-To reproduce any portion, or the entirety of, the results generated from this project, follow the steps below. The project is designed so that **every script can be run independently**. All intermediate tables and outputs required by downstream scripts have already been generated and are included in the repository.
+Each script starts by setting the working directory as the folder in which the script resides, so the scripts can be run without manually setting working directories. Certain scripts use the output generated from one script as input. However, to reproduce the results of this project, the scripts do not have to be run in any order, and each script can be run on its own. The reason is that all the scripts have been ran previously and all scripts use relative paths that are alraedy set up in the 'data' folder. This means that all required input files are already present. To reproduce any portion, or the entirety of, the results generated from this project, simply follow the steps below. 
 
 ### 1. Install RStudio
 Install RStudio (version ≥ 2023.12 recommended) and ensure that a compatible version of R is installed on your system.
