@@ -35,7 +35,7 @@ All scripts are organised to use relative paths and deposit outputs in `results/
 
 ## Reproducibility
 
-Each script starts by setting the working directory as the folder in which the script resides, so the scripts can be run without manually setting working directories. Certain scripts use the output generated from one script as input. However, to reproduce the results of this project, the scripts do not have to be run in any order, and each script can be run on its own. The reason is that all the scripts have been run previously and all scripts use relative paths that are already set up in the 'data' folder. This means that all required input files are already present. To ensure reproducibility, use Git clone below instead of downloading the ZIP as ZIP download only gets placeholders for large files such as .Rmd files.
+Each script starts by setting the working directory as the folder in which the script resides, so the scripts can be run without manually setting working directories. Certain scripts use the output generated from another script as input. However, to reproduce the results of this project, the scripts do not have to be run in any order, and each script can be run on its own. The reason is that all of the scripts have been run previously and all scripts use relative paths that are already set up in the 'data' folder. This means that all required input files are already present. To ensure reproducibility, use Git clone below instead of downloading the ZIP as ZIP download only gets placeholders for large files such as .Rmd files.
 
 To reproduce any portion, or the entirety of, the results generated from this project, follow the steps below. 
 
